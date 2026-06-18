@@ -1,0 +1,1776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Archive</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Level 1 -->
+        <section class="level active">
+
+    <div class="archive-tag">
+        CLASSIFIED ARCHIVE
+    </div>
+
+    <div class="level-number">
+        SYSTEM ENTRY POINT
+    </div>
+
+    <h1 id="typewriter"></h1>
+
+    <p>
+        A hidden archive has been recovered.
+
+        Contents include memories,
+        observations,
+        evidence,
+        and one birthday.
+
+        Viewer discretion advised.
+    </p>
+
+    <button class="next-btn">
+        Access Archive
+    </button>
+
+</section>
+
+        <!-- Level 2 -->
+        <section class="level">
+
+    <div class="archive-tag">
+        SUBJECT ANALYSIS
+    </div>
+
+    <div class="level-number">
+        LEVEL 2 OF 22
+    </div>
+
+    <h1>Identity Scan</h1>
+
+    <div class="scan-box">
+
+        <div class="scan-row">
+            <span>Name</span>
+            <span>[Arhan]</span>
+        </div>
+
+        <div class="scan-row">
+            <span>Status</span>
+            <span>Verified ✓</span>
+        </div>
+
+        <div class="scan-row">
+            <span>Age</span>
+            <span id="ageCounter">21</span>
+        </div>
+
+    </div>
+
+    <p>
+        Running annual birthday update...
+    </p>
+
+    <div class="buttons">
+        <button class="prev-btn">Previous</button>
+        <button class="next-btn">Continue</button>
+    </div>
+
+</section>
+<section class="level">
+
+    <div class="archive-tag">
+        EVIDENCE BOARD
+    </div>
+
+    <div class="level-number">
+        LEVEL 3 OF 22
+    </div>
+
+    <h1>Collected Evidence</h1>
+
+    <p>
+        The following objects have been linked to the subject.
+    </p>
+
+    <div class="evidence-grid">
+
+        <div class="evidence-card"
+             onclick="showEvidence(
+             'flowers')">
+
+            🌼
+            <span>Flowers</span>
+
+        </div>
+
+        <div class="evidence-card"
+             onclick="showEvidence(
+             'crochet')">
+
+            🧶
+            <span>Crochet</span>
+
+        </div>
+
+        <div class="evidence-card"
+             onclick="showEvidence(
+             'shawarma')">
+
+            🌯
+            <span>Shawarma</span>
+
+        </div>
+
+        <div class="evidence-card"
+             onclick="showEvidence(
+             'airpods')">
+
+            🎧
+            <span>AirPods</span>
+
+        </div>
+
+    </div>
+
+    <div id="evidenceOutput">
+
+        Select evidence to inspect.
+
+    </div>
+
+    <div class="buttons">
+        <button class="prev-btn">Previous</button>
+        <button class="next-btn">Continue</button>
+    </div>
+
+</section>
+
+<section class="level">
+
+    <div class="archive-tag">
+        PERSONALITY ANALYSIS
+    </div>
+
+    <div class="level-number">
+        LEVEL 4 OF 22
+    </div>
+
+    <h1>Subject Analysis</h1>
+
+    <p>
+        Running personality diagnostics...
+    </p>
+
+    <div class="analysis-box">
+
+        <div class="analysis-item">
+            <span>Introvert</span>
+            <span id="trait1">...</span>
+        </div>
+
+        <div class="analysis-item">
+            <span>Kindness</span>
+            <span id="trait2">...</span>
+        </div>
+
+        <div class="analysis-item">
+            <span>Acts Like He Doesn't Care</span>
+            <span id="trait3">...</span>
+        </div>
+
+        <div class="analysis-item">
+            <span>Actually Cares</span>
+            <span id="trait4">...</span>
+        </div>
+
+        <div class="analysis-item">
+            <span>Birthday Human</span>
+            <span id="trait5">...</span>
+        </div>
+
+    </div>
+
+    <div class="buttons">
+        <button class="prev-btn">Previous</button>
+        <button class="next-btn">Continue</button>
+    </div>
+
+</section>
+<section class="level">
+
+    <div class="archive-tag">
+        OBSERVATION ROOM
+    </div>
+
+    <div class="level-number">
+        LEVEL 5 OF 22
+    </div>
+
+    <h1>Confidential Findings</h1>
+
+    <p>
+        The following observations were collected over several months.
+    </p>
+
+    <div class="observation-container">
+
+        <div class="observation-card" onclick="revealObservation(this)">
+            <div class="obs-title">Observation 01</div>
+            <div class="obs-content">
+                You hide your feelings instead of talking about them.
+
+                Most people probably don't notice.
+
+                I do.
+            </div>
+        </div>
+
+        <div class="observation-card" onclick="revealObservation(this)">
+            <div class="obs-title">Observation 02</div>
+            <div class="obs-content">
+                You are much harder on yourself than you are on other people.
+            </div>
+        </div>
+
+        <div class="observation-card" onclick="revealObservation(this)">
+            <div class="obs-title">Observation 03</div>
+            <div class="obs-content">
+                If you ever feel unwanted somewhere,
+                you don't create drama.
+
+                You quietly walk away.
+            </div>
+        </div>
+
+        <div class="observation-card" onclick="revealObservation(this)">
+            <div class="obs-title">Observation 04</div>
+            <div class="obs-content">
+                Even when you're angry,
+                you never take it out on me.
+            </div>
+        </div>
+
+        <div class="observation-card" onclick="revealObservation(this)">
+            <div class="obs-title">Observation 05</div>
+            <div class="obs-content">
+                You believe in making the most of today.
+
+                You'd rather try than spend years wondering.
+            </div>
+        </div>
+
+        <div class="observation-card" onclick="revealObservation(this)">
+            <div class="obs-title">Observation 06</div>
+            <div class="obs-content">
+                You pretend small efforts don't matter.
+
+                But they matter to you more than you admit.
+            </div>
+        </div>
+
+    </div>
+
+    <div id="finalConclusion" class="final-conclusion">
+
+        <h3>ANALYSIS COMPLETE</h3>
+
+        <p>
+            Conclusion:
+
+            The subject is far more caring than he admits.
+        </p>
+
+    </div>
+
+    <div class="buttons">
+        <button class="prev-btn">Previous</button>
+        <button class="next-btn">Continue</button>
+    </div>
+
+</section>
+<section class="level">
+
+    <div class="archive-tag">
+        MEMORY VAULT
+    </div>
+
+    <div class="level-number">
+        LEVEL 6 OF 22
+    </div>
+
+    <h1>Recovered Artifacts</h1>
+
+    <p>
+        The archive contains several recovered artifacts.
+
+        Open them at your own risk.
+    </p>
+
+    <div class="artifact-grid">
+
+        <div class="artifact-card"
+             onclick="openArtifact(0)">
+            📁 Artifact #00
+        </div>
+
+        <div class="artifact-card"
+             onclick="openArtifact(1)">
+            📁 Artifact #01
+        </div>
+
+        <div class="artifact-card"
+             onclick="openArtifact(2)">
+            📁 Artifact #02
+        </div>
+
+        <div class="artifact-card"
+             onclick="openArtifact(3)">
+            📁 Artifact #03
+        </div>
+
+        <div class="artifact-card"
+             onclick="openArtifact(4)">
+            📁 Artifact #04
+        </div>
+
+        <div class="artifact-card"
+             onclick="openArtifact(5)">
+            📁 Artifact #05
+        </div>
+
+        <div class="artifact-card locked-artifact" 
+        id="secretArtifact"
+        onclick="openSecretArtifact()">
+    🔒 CLASSIFIED FILE
+    </div>
+            
+
+    </div>
+
+    <div class="buttons">
+        <button class="prev-btn">Previous</button>
+        <button class="next-btn">Continue</button>
+    </div>
+
+</section>
+<section class="level">
+
+    <div class="archive-tag">
+        INTERNAL FILES
+    </div>
+
+    <div class="level-number">
+        LEVEL 7 OF 22
+    </div>
+
+    <h1>Things You Never Knew</h1>
+
+    <p>
+        The following files were never sent.
+    </p>
+
+    <div class="secret-files">
+
+        <div class="secret-file"
+             onclick="revealSecret(this)">
+            File 01
+        </div>
+
+        <div class="secret-file"
+             onclick="revealSecret(this)">
+            File 02
+        </div>
+
+        <div class="secret-file"
+             onclick="revealSecret(this)">
+            File 03
+        </div>
+
+        <div class="secret-file"
+             onclick="revealSecret(this)">
+            File 04
+        </div>
+
+    </div>
+
+    <div class="buttons">
+        <button class="prev-btn">Previous</button>
+        <button class="next-btn">Continue</button>
+    </div>
+
+</section>
+<section class="level">
+
+    <div class="archive-tag">
+        TEMPORAL ARCHIVE
+    </div>
+
+    <div class="level-number">
+        LEVEL 8 OF 22
+    </div>
+
+    <h1>Timeline of Importance</h1>
+
+    <p>
+        Analysis suggests the subject gradually became impossible to ignore.
+    </p>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="month">December</div>
+
+            <div class="status">
+                Stranger
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="month">January</div>
+
+            <div class="status">
+                Interesting Person
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="month">February</div>
+
+            <div class="status">
+                Favorite Notification
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="month">March</div>
+
+            <div class="status">
+                Important Human
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="month">April</div>
+
+            <div class="status">
+                Stop Checking Phone Every 5 Minutes Challenge
+                <br>
+                (Failed)
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="month">May</div>
+
+            <div class="status">
+                Archive Priority Increased
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="month">June</div>
+
+            <div class="status">
+                Classification:
+                <br>
+                One Of My Favorite People
+            </div>
+        </div>
+
+    </div>
+
+    <div class="buttons">
+
+        <button class="prev-btn">
+            Previous
+        </button>
+
+        <button class="next-btn">
+            Continue
+        </button>
+
+    </div>
+
+</section>
+<section class="level">
+
+    <div class="archive-tag">
+        ACHIEVEMENT SYSTEM
+    </div>
+
+    <div class="level-number">
+        LEVEL 9 OF 22
+    </div>
+
+    <h1>Unlocked Achievements</h1>
+
+    <p>
+        Congratulations.
+        Several unusual accomplishments have been recorded.
+    </p>
+
+    <div class="achievement-grid">
+
+    <div class="achievement-card">
+        🏆
+        <h3>Flower Distributor</h3>
+        <p>Successfully delivered flowers twice.</p>
+    </div>
+
+    <div class="achievement-card">
+        🎀
+        <h3>Hairband Collector</h3>
+        <p>Obtained rare sentimental artifact.</p>
+    </div>
+
+    <div class="achievement-card">
+        🚪
+        <h3>Gentleman Mode</h3>
+        <p>Promised door-opening service despite BMW shortage.</p>
+    </div>
+
+    <div class="achievement-card">
+        📱
+        <h3>Favorite Notification</h3>
+        <p>Became part of someone's daily routine.</p>
+    </div>
+
+    <div class="achievement-card">
+        🧸
+        <h3>Soft Heart Hidden</h3>
+        <p>Successfully disguised emotions.</p>
+    </div>
+
+</div>
+<div class="buttons">
+
+    <button class="prev-btn">
+        Previous
+    </button>
+
+    <button class="next-btn">
+        Continue
+    </button>
+
+</div>
+
+</section>
+</section>
+<section class="level">
+
+    <div class="archive-tag">
+        AI COMPATIBILITY TEST
+    </div>
+
+    <div class="level-number">
+        LEVEL 10 OF 22
+    </div>
+
+    <h1>Compatibility Assessment</h1>
+
+    <p>
+
+        The Archive AI requires several answers
+        before generating a report.
+
+    </p>
+
+    <div class="quiz-container">
+
+        <div class="question">
+
+            <h3>
+                Preferred vehicle?
+            </h3>
+
+            <button onclick="answerQuestion(this)">
+                BMW
+            </button>
+
+            <button onclick="answerQuestion(this)">
+                Baleno
+            </button>
+
+            <button onclick="answerQuestion(this)">
+                Spaceship
+            </button>
+
+            <button onclick="answerQuestion(this)">
+                Auto Rickshaw
+            </button>
+
+        </div>
+
+        <div class="question">
+
+            <h3>
+                Which artifact reached legendary status?
+            </h3>
+
+            <button onclick="answerQuestion(this)">
+                Hairband
+            </button>
+
+            <button onclick="answerQuestion(this)">
+                Shoe
+            </button>
+
+            <button onclick="answerQuestion(this)">
+                Notebook
+            </button>
+
+            <button onclick="answerQuestion(this)">
+                Wallet
+            </button>
+
+        </div>
+
+        <div class="question">
+
+            <h3>
+                Which title was acquired unexpectedly?
+            </h3>
+
+            <button onclick="answerQuestion(this)">
+                Meri Jaan
+            </button>
+
+            <button onclick="answerQuestion(this)">
+                Superman
+            </button>
+
+            <button onclick="answerQuestion(this)">
+                CEO
+            </button>
+
+            <button onclick="answerQuestion(this)">
+                Chef
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id="compatibilityResult">
+
+    </div>
+
+    <div class="buttons">
+
+        <button class="prev-btn">
+            Previous
+        </button>
+
+        <button class="next-btn">
+            Continue
+        </button>
+
+    </div>
+
+</section>
+<section class="level">
+
+    <div class="archive-tag">
+        LESSONS RECOVERED
+    </div>
+
+    <div class="level-number">
+        LEVEL 11 OF 22
+    </div>
+
+    <h1>Things You Taught Me</h1>
+
+    <p>
+
+        The archive has identified
+        several unexpected lessons.
+
+    </p>
+
+    <div class="lesson-container">
+
+        <div class="lesson-card"
+        onclick="revealLesson(this)">
+
+            <div class="lesson-title">
+
+                Lesson #01
+
+            </div>
+
+            <div class="lesson-content">
+
+                Small efforts matter more
+                than expensive things.
+
+            </div>
+
+        </div>
+
+        <div class="lesson-card"
+        onclick="revealLesson(this)">
+
+            <div class="lesson-title">
+
+                Lesson #02
+
+            </div>
+
+            <div class="lesson-content">
+
+                Gentle people are often
+                stronger than loud ones.
+
+            </div>
+
+        </div>
+
+        <div class="lesson-card"
+        onclick="revealLesson(this)">
+
+            <div class="lesson-title">
+
+                Lesson #03
+
+            </div>
+
+            <div class="lesson-content">
+
+                Comfort doesn't always
+                arrive loudly.
+
+            </div>
+
+        </div>
+
+        <div class="lesson-card"
+        onclick="revealLesson(this)">
+
+            <div class="lesson-title">
+
+                Lesson #04
+
+            </div>
+
+            <div class="lesson-content">
+
+                Flowers can become memories.
+
+            </div>
+
+        </div>
+
+        <div class="lesson-card"
+        onclick="revealLesson(this)">
+
+            <div class="lesson-title">
+
+                Lesson #05
+
+            </div>
+
+            <div class="lesson-content">
+
+                Some people become important
+                so gradually that you never
+                notice when it happened.
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="lessonConclusion">
+
+        <h3>
+
+            LESSON ANALYSIS COMPLETE
+
+        </h3>
+
+        <br>
+
+        Some lessons are taught
+        without either person
+        realizing it.
+
+    </div>
+
+    <div class="buttons">
+
+        <button class="prev-btn">
+
+            Previous
+
+        </button>
+
+        <button class="next-btn">
+
+            Continue
+
+        </button>
+
+    </div>
+
+</section>
+<section class="level">
+
+    <div class="archive-tag">
+
+        DRAFTS FOLDER RECOVERED
+
+    </div>
+
+    <div class="level-number">
+
+        LEVEL 12
+
+    </div>
+
+    <h1>Unsent Thoughts</h1>
+
+    <p>
+
+        Several messages were found.
+        None of them were delivered.
+
+    </p>
+
+    <div class="draft-container">
+
+        <div class="draft-card" onclick="openDraft(this)">
+
+            <div class="draft-title">
+
+                Draft #01
+
+            </div>
+
+            <div class="draft-content">
+
+                I didn't expect you to become this important.
+
+            </div>
+
+        </div>
+
+        <div class="draft-card" onclick="openDraft(this)">
+
+            <div class="draft-title">
+
+                Draft #02
+
+            </div>
+
+            <div class="draft-content">
+
+                Sometimes I smile while reading old chats.
+
+            </div>
+
+        </div>
+
+        <div class="draft-card" onclick="openDraft(this)">
+
+            <div class="draft-title">
+
+                Draft #03
+
+            </div>
+
+            <div class="draft-content">
+
+                I wonder if you realize how much small efforts mean.
+
+            </div>
+
+        </div>
+
+        <div class="draft-card" onclick="openDraft(this)">
+
+            <div class="draft-title">
+
+                Draft #04
+
+            </div>
+
+            <div class="draft-content">
+
+                Some nicknames have a habit of staying.
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="draftConclusion">
+
+        <h3>
+
+            DRAFT ANALYSIS COMPLETE
+
+        </h3>
+
+        <br>
+
+        Not every thought needs to be sent
+        to be true.
+
+    </div>
+
+    <div class="buttons">
+
+        <button class="prev-btn">
+            Previous
+        </button>
+
+        <button class="next-btn">
+            Continue
+        </button>
+
+    </div>
+
+</section>
+
+<section class="level">
+
+    <div class="archive-tag">
+
+        SUBJECT UPDATE LOG
+
+    </div>
+
+    <div class="level-number">
+
+        LEVEL 13
+
+    </div>
+
+    <h1>Version 22.0 Released</h1>
+
+    <p>
+
+        Several changes have been detected.
+
+    </p>
+
+    <div class="patch-container">
+
+        <div class="patch-card">
+
+            <div class="patch-version">
+
+                UPDATE #01
+
+            </div>
+
+            <div class="patch-content">
+
+                + Flower Delivery Skill unlocked.
+
+            </div>
+
+        </div>
+
+        <div class="patch-card">
+
+            <div class="patch-version">
+
+                UPDATE #02
+
+            </div>
+
+            <div class="patch-content">
+
+                + Hairband Compatibility enabled.
+
+            </div>
+
+        </div>
+
+        <div class="patch-card">
+
+            <div class="patch-version">
+
+                UPDATE #03
+
+            </div>
+
+            <div class="patch-content">
+
+                + Nickname "Meri Jaan" acquired unexpectedly.
+
+            </div>
+
+        </div>
+
+        <div class="patch-card">
+
+            <div class="patch-version">
+
+                UPDATE #04
+
+            </div>
+
+            <div class="patch-content">
+
+                + Favorite Notification status unlocked.
+
+            </div>
+
+        </div>
+
+        <div class="patch-card">
+
+            <div class="patch-version">
+
+                UPDATE #05
+
+            </div>
+
+            <div class="patch-content">
+
+                + Door Opening Gentleman Mode installed.
+            </div>
+
+        </div>
+
+        <div class="patch-card">
+
+            <div class="patch-version">
+
+                UPDATE #06
+
+            </div>
+
+            <div class="patch-content">
+
+                - BMW shortage issue remains unresolved.
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="patch-note">
+
+        <h3>
+
+            Developer Notes
+
+        </h3>
+
+        <br>
+
+        Version 22.0 appears to be
+        more wholesome than previous releases.
+
+    </div>
+
+    <div class="buttons">
+
+        <button class="prev-btn">
+
+            Previous
+
+        </button>
+
+        <button class="next-btn">
+
+            Continue
+
+        </button>
+
+    </div>
+
+</section>
+<section class="level">
+
+    <div class="archive-tag">
+        ARCHIVE SUPPORT FILES
+    </div>
+
+    <div class="level-number">
+        LEVEL 14
+    </div>
+
+    <h1>Open When...</h1>
+
+    <p>
+        Several support files were found.
+    </p>
+
+    <div class="openwhen-container">
+
+        <div class="openwhen-card" onclick="openWhen(this)">
+            <div class="openwhen-title">
+                📩 Open When You're Celebrating Something
+            </div>
+
+            <div class="openwhen-content">
+
+                Please don't immediately
+                move to the next goal.
+
+                <br><br>
+
+                Pause.
+
+                <br>
+
+                Be proud of yourself.
+
+            </div>
+        </div>
+
+        <div class="openwhen-card" onclick="openWhen(this)">
+            <div class="openwhen-title">
+                📩 Open When Life Feels Too Serious
+            </div>
+
+            <div class="openwhen-content">
+
+                Eat something nice.
+
+                <br>
+
+                Listen to music.
+
+                <br>
+
+                And remember,
+
+                <br><br>
+
+                BMW shortage issues
+                are still unresolved.
+
+            </div>
+        </div>
+
+        <div class="openwhen-card" onclick="openWhen(this)">
+            <div class="openwhen-title">
+                📩 Open When You Forget To Slow Down
+            </div>
+
+            <div class="openwhen-content">
+
+                Drink water.
+
+                <br>
+
+                Sleep properly.
+
+                <br>
+
+                Stop pretending
+                you're a robot.
+
+            </div>
+        </div>
+
+        <div class="openwhen-card" onclick="openWhen(this)">
+            <div class="openwhen-title">
+                📩 Open When You Need A Random Fact
+            </div>
+
+            <div class="openwhen-content">
+
+                Archive Fact #22
+
+                <br><br>
+
+                A certain human once asked
+                for a hairband.
+
+                <br><br>
+
+                Scientists remain confused.
+
+            </div>
+        </div>
+
+        <div class="openwhen-card" onclick="openWhen(this)">
+            <div class="openwhen-title">
+                📩 Open When You're Old And Wrinkly
+            </div>
+
+            <div class="openwhen-content">
+
+                Future Prediction:
+
+                <br><br>
+
+                BMW issues:
+                Unresolved.
+
+                <br>
+
+                Soft heart:
+                Still present.
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="openWhenConclusion">
+
+        <h3>
+            SUPPORT FILES REVIEWED
+        </h3>
+
+        <br>
+
+        Life may change.
+
+        <br><br>
+
+        Years may pass.
+
+        <br><br>
+
+        But hopefully,
+
+        <br><br>
+
+        your ability to smile
+        at small things never does.
+
+    </div>
+
+    <div class="buttons">
+
+        <button class="prev-btn">
+            Previous
+        </button>
+
+        <button class="next-btn">
+            Continue
+        </button>
+
+    </div>
+
+</section>
+<section class="level">
+
+    <div class="archive-tag">
+        FINAL TRANSMISSION
+    </div>
+
+    <div class="level-number">
+        LEVEL 15
+    </div>
+
+    <h1>Incoming Transmission</h1>
+
+    <p>
+
+        One final message has been received.
+
+    </p>
+
+    <button class="transmission-btn"
+            onclick="openTransmission()">
+
+        📡 Open Transmission
+
+    </button>
+
+    <div id="transmissionMessage">
+
+        <h3>
+
+            TRANSMISSION SUCCESSFUL
+
+        </h3>
+
+        <br>
+
+        Hello.
+
+        <br><br>
+
+        Congratulations.
+
+        <br><br>
+
+        You have successfully reached
+        the final chapter.
+
+        <br><br>
+
+        According to archive records,
+
+        today marks the birthday
+        of a certain 22-year-old human.
+
+        <br><br>
+
+        Version 22.0 has officially launched.
+
+        <br><br>
+
+        The archive would like to thank
+        the subject for:
+
+        <br><br>
+
+        🌼 Flowers
+
+        <br>
+
+        🍫 Chocolates
+
+        <br>
+
+        🎀 Hairband investigations
+
+        <br>
+
+        🚪 Door-opening promises
+
+        <br>
+
+        💛 Unexpected nicknames
+
+        <br>
+
+        🚗 Unresolved BMW issues
+
+        <br><br>
+
+        Happy Birthday.
+
+        <br><br>
+
+        End of transmission.
+
+    </div>
+
+    <div class="buttons">
+
+        <button class="prev-btn">
+
+            Previous
+
+        </button>
+
+        <button class="next-btn">
+
+            Continue
+
+        </button>
+
+    </div>
+
+</section>
+<section class="level">
+
+    <div class="archive-tag">
+
+        FINAL REWARD DETECTED
+
+    </div>
+
+    <div class="level-number">
+
+        LEVEL 16
+
+    </div>
+
+    <h1>Treasure Chest</h1>
+
+    <p>
+
+        One final reward has been discovered.
+
+    </p>
+
+    <button class="chest-btn"
+            onclick="openChest()">
+
+        🎁 Open Treasure Chest
+
+    </button>
+
+    <div id="chestContent">
+
+        <h3>
+
+            MOST VALUABLE DISCOVERY
+
+        </h3>
+
+        <br>
+
+        Status:
+
+        <br><br>
+
+        Still under observation.
+
+        <br><br>
+
+        Artifact Name:
+
+        <br><br>
+
+        <h2>
+
+            Arhan:Meri Jaan
+
+        </h2>
+
+        <br>
+
+        Importance Level:
+
+        <br><br>
+
+        Higher than expected.
+
+        <br><br>
+
+        Archive Notes:
+
+        <br><br>
+
+        Definitely one of the archive's
+        favorite discoveries.
+
+    </div>
+
+    <div class="buttons">
+
+        <button class="prev-btn">
+
+            Previous
+
+        </button>
+
+        <button class="next-btn">
+
+            Continue
+
+        </button>
+
+    </div>
+
+</section>
+<section class="level">
+
+    <div class="archive-tag">
+
+        ARCHIVE COMPLETE
+
+    </div>
+
+    <div class="level-number">
+
+        LEVEL 17
+
+    </div>
+
+    <h1>Mission Successful</h1>
+
+    <p>
+
+        Final report generated.
+
+    </p>
+
+    <button class="complete-btn"
+            onclick="completeArchive()">
+
+        ⭐ Generate Final Report
+
+    </button>
+
+    <div id="finalReport">
+
+        <h3>
+
+            ARCHIVE COMPLETE
+
+        </h3>
+
+        <br>
+
+        17 Levels Cleared.
+
+        <br><br>
+
+        Missed you for unhealthy amounts of time.
+
+        <br><br>
+
+        To build this archive, went through all the chats from december to today.
+
+        Countless memories collected.
+
+        The most hilarious yet sweet was when we did that role play
+
+        <br><br>
+
+        Some people become important
+
+        so gradually
+
+        that you don't notice
+
+        it happening.
+
+        <br><br>
+
+        Thank you
+
+        for being one of the archive's
+
+        favorite discoveries and will always be...
+
+        <br><br>
+
+        Mission Status:
+
+        <br><br>
+
+        SUCCESSFUL
+
+        <br><br>
+
+        Happy 22nd Birthday,
+
+        Meri Jaan.
+
+        Sending you all the love and happiness in the world.
+        
+        Sending you loads of kisses and hugs...
+
+    </div>
+
+    <div class="secret-ending">
+
+        ...
+
+        <br><br>
+
+        Wait.
+
+        <br><br>
+
+        One additional file detected.
+
+    </div>
+
+    <div class="buttons">
+
+        <button class="prev-btn">
+
+            Previous
+
+        </button>
+
+        <button class="next-btn">
+
+            Continue
+
+        </button>
+
+    </div>
+
+</section>
+<section class="level">
+
+    <div class="archive-tag">
+
+        TIME CAPSULE
+
+    </div>
+
+    <div class="level-number">
+
+        LEVEL 18
+
+    </div>
+
+    <h1>Open On Your 23rd Birthday</h1>
+
+    <p>
+
+        A message has been stored
+        for future use.
+
+    </p>
+
+   <div class="capsule-file">
+
+    📁 time_capsule_23.exe
+
+    <br><br>
+
+    STATUS : LOCKED
+
+    <br>
+
+    ACCESS LEVEL : FINAL
+
+</div>
+
+<button class="capsule-btn"
+        onclick="openCapsule()">
+
+    🔑 Unlock Time Capsule
+
+</button>
+
+    <div id="capsuleMessage">
+
+        <h3>
+
+            Dear 23-Year-Old You,
+
+        </h3>
+
+        <br>
+
+        If you're reading this,
+
+        then somehow another year
+        has already passed.
+
+        <br><br>
+
+        I don't know where life
+        has taken you.
+
+        <br><br>
+
+        I don't know which dreams
+        came true,
+
+        and which plans changed.
+
+        <br><br>
+
+        But I hope
+        you're kinder to yourself.
+
+        <br><br>
+
+        I hope you've found
+        reasons to smile.
+
+        <br><br>
+
+        I hope life has given you
+        beautiful memories.
+
+        <br><br>
+
+        And I hope you still
+        appreciate small efforts,
+
+        because that's one of my
+        favorite things about you.
+
+        <br><br>
+
+        Also,
+
+       I hope things I crochted for you still exist 
+       and reminds you of me once..
+
+        <br><br>
+        I hope you are taking care of yourself and
+        not thinking negative of yourself.
+        <br><br>
+
+        Whoever you are
+        when you turn 23,
+
+        I hope you're smiling.
+
+
+        <br><br>
+
+        Happy Birthday,
+
+        Future Human.
+
+        <br><br>
+
+        See you in Version 23.0.
+
+        <br><br>
+
+        — Archive
+
+    </div>
+
+  <div class="the-end">
+
+    THE END
+
+    <br><br>
+
+    Or perhaps...
+
+    <br><br>
+
+    To Be Continued...
+
+</div>
+
+<div class="buttons">
+
+    <button class="prev-btn">
+
+        ← Revisit The Archive
+
+    </button>
+
+</div>
+
+</section>
+
+    </main>
+    
+
+    <div id="artifactModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close-btn"
+              onclick="closeArtifact()">
+            ×
+        </span>
+
+        <div id="artifactContent">
+
+        </div>
+
+    </div>
+
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
